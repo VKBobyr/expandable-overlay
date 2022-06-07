@@ -1,8 +1,9 @@
 # test folders
 tester
 test
+media
 
-# dev fodlers
+# dev folders
 .dart_tool
 .idea
 .vscode

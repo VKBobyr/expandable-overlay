@@ -1,5 +1,5 @@
 name: expandable_overlay
-description: A new Flutter package project.
+description: An overlay that expands from the button that's used to open it and then collapses back into it
 version: 0.0.1
 homepage: https://github.com/VKBobyr/expandable-overlay
 
