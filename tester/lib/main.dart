@@ -14,29 +14,41 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Container(
-                color: Colors.blue.shade50,
-                height: 200,
-                child: const Center(child: Text("empty space")),
-              ),
-              ExpandableOverlayLauncher(
-                overlayParams: ExpandableOverlayParams(
-                  contentBuilder: (context, dismissOverlay) =>
-                      buildModalContents('Modal 1'),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
+                  color: Colors.blue.shade50,
+                  height: 300,
+                  child: const Center(child: Text("empty space")),
                 ),
-                child: buildButton('Modal 1'),
-              ),
-              ExpandableOverlayLauncher(
-                overlayParams: ExpandableOverlayParams(
-                  contentBuilder: (context, dismissOverlay) =>
-                      buildModalContents('Modal 2'),
+                ExpandableOverlayLauncher(
+                  overlayParams: ExpandableOverlayParams(
+                    contentBuilder: (context, dismissOverlay) =>
+                        buildModalContents('Modal 1'),
+                  ),
+                  child: buildButton('Modal 1'),
                 ),
-                child: buildButton('Modal 2'),
-              ),
-            ],
+                Container(
+                  color: Colors.blue.shade50,
+                  height: 300,
+                  child: const Center(child: Text("more empty space")),
+                ),
+                ExpandableOverlayLauncher(
+                  overlayParams: ExpandableOverlayParams(
+                    contentBuilder: (context, dismissOverlay) =>
+                        buildModalContents('Modal 2'),
+                  ),
+                  child: buildButton('Modal 2'),
+                ),
+                Container(
+                  color: Colors.blue.shade50,
+                  height: 300,
+                  child: const Center(child: Text("even more empty space")),
+                ),
+              ],
+            ),
           ),
         ),
       ),

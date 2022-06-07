@@ -1,8 +1,15 @@
 This package fascilitates easy creation of expandable overlays that can be swiped down to dismiss.
 
+<!-- ![](media/demo.gif) -->
+
+<img src="media/demo.gif"
+     alt="Animated gif of how the package works"
+     style="width: 300px;" />
+
 ## Getting Started
 
 Install package via command line (or just add it in `pubspec.yaml`):
+
 ```bash
 flutter pub add expandable_overlay
 ```
