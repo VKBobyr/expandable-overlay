@@ -1,6 +1,6 @@
 name: expandable_overlay
 description: An overlay that expands from the button that's used to open it and then collapses back into it
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/VKBobyr/expandable-overlay
 
 environment:
