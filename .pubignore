@@ -1,0 +1,10 @@
+# test folders
+tester
+test
+
+# dev fodlers
+.dart_tool
+.idea
+.vscode
+.metadata
+.packages
